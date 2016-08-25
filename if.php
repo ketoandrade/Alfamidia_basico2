@@ -1,7 +1,8 @@
 <?php
-
-$x = rand(0,getrandmax());
-$y = rand(0,  getrandmax());
+define("MIN", 0);
+define("MAX", getrandmax());
+$x = rand(MIN,MAX);
+$y = rand(MIN,MAX);
 if (($x % 2 == 0) && ($y % 2 == 0)) {
 
     echo "a variável $x é par";
