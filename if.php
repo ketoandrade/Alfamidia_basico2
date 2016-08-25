@@ -1,28 +1,20 @@
 <?php
 
-$x = "10";
-$y = "17";
-   if ($x %2 == 0){
+$x = rand(0,getrandmax());
+$y = rand(0,  getrandmax());
+if (($x % 2 == 0) && ($y % 2 == 0)) {
 
-   echo "a variável $x é par";
+    echo "a variável $x é par";
+} elseif (($x % 2 == 0) && ($y % 2 == 1)) {
 
-     }else{ 
- 
-   echo "a variavel $x é impar";
+    echo "a variável $x é par é o valor $y é impar";
+} elseif (($x % 2 == 1) && ($y % 2 == 0)) {
 
-	   
-   }
-   echo "<br>";
-   if ($y %2 == 0){
+    echo "a variável $x é impar é o valor $y é par";
+} else {
 
-   echo "a variável $y é par";
-
-     }else{ 
- 
-   echo "a variavel $y é impar";
-
-	   
-   }
+    echo "as variaveis $x e $y são impares";
+}
 
 
 
